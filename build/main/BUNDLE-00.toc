@@ -1,0 +1,3 @@
+([('main',
+   '/Users/boss.back/Desktop/cursor/book-scanner/dist/main',
+   'EXECUTABLE')],)
