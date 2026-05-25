@@ -1,5 +1,5 @@
 # -*- mode: python ; coding: utf-8 -*-
-
+# Windows 빌드: pyinstaller BookScanner_win.spec --noconfirm
 
 a = Analysis(
     ['main.py'],
@@ -35,18 +35,5 @@ exe = EXE(
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
-)
-app = BUNDLE(
-    exe,
-    name='BookScanner.app',
-    icon='book.icns',
-    bundle_identifier='com.bookscanner.app',
-    info_plist={
-        'CFBundleName': 'BookScanner',
-        'CFBundleDisplayName': 'BookScanner',
-        'CFBundleVersion': '1.1.0',
-        'CFBundleShortVersionString': '1.1.0',
-        'NSHighResolutionCapable': True,
-        'NSScreenCaptureUsageDescription': '화면 캡처를 위해 권한이 필요합니다.',
-    },
+    icon='book.ico',
 )
